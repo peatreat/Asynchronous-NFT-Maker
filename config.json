@@ -1,0 +1,18 @@
+{
+	"_HOW_TO_USE1": "Set WIDTH and HEIGHT to desired final image resolution.",
+	"_HOW_TO_USE2": "Modify the layers variable in the same format it's presented in now.",
+	"_HOW_TO_USE3": "(ID): Set this for the order you want the layer to be drawn (1 first, infinity last, etc.)",
+	"_HOW_TO_USE4": "(Name): The name of the folder inside the Assets folder that contains the different layer files for that asset.",
+	"_HOW_TO_USE5": "(Rarity): Set this to a number between 0 and 1 to represent how often you want there to be a combo with this layer (0.1 = 10 out of 100 = 1 in 10)",
+	"_HOW_TO_USE6": "(Dimensions): Set in the following order (x, y, w, h) in pixels",
+	"_HOW_TO_USE7": "Do the same for required with the layers that you want to be on every combo no matter what",
+	"WIDTH": 200,
+	"HEIGHT": 200,
+	"layers": [
+		{"id": 2, "name" : "Character", "rarity": 1, "dimensions" : [0, 0, 130, 100], "elements": ["black.png", "pink.png"]},
+		{"id": 3, "name" : "Coin", "rarity": 0.8, "dimensions" : [0, 0, 130, 100], "elements": ["gold.png"]}
+	],
+	"required": [
+		{"id": 1, "name" : "BG", "dimensions" : [0, 0, 200, 200], "elements": ["white.png", "red.png", "blue.png"]}
+	]
+}
